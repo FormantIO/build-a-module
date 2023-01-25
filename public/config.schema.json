@@ -1,0 +1,54 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Softbank",
+  "type": "object",
+  "properties": {
+    "region": {
+      "type": "string",
+      "title": "Region",
+      "$formant.groups": true
+    },
+    "start": {
+      "type": "string",
+      "title": "Start Date",
+      "$formant.date": true
+    },
+    "end": {
+      "type": "string",
+      "title": "End Date",
+      "$formant.date": true
+    },
+    "count": {
+      "type": "number",
+      "title": "Count",
+      "$formant.groups": true
+    },
+    "playSound": {
+      "type": "boolean",
+      "title": "Play Sound",
+      "$formant.groups": true
+    },
+    "cats": {
+      "type": "array",
+      "title": "Region",
+      "items": {
+        "$formant.itemName": "Cat",
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "title": "Name"
+          },
+          "age": {
+            "type": "number",
+            "title": "Age"
+          },
+          "color": {
+            "type": "string",
+            "title": "Color"
+          }
+        }
+      }
+    }
+  }
+}
